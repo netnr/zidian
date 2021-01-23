@@ -1,7 +1,5 @@
-# zidian
+# zidian 字典
 汉字、词语、成语查询接口
-
-### Demo <https://zidian.netnr.com>
 
 ### 引言
 - 数据来源于开源项目 <https://github.com/pwxcoo/chinese-xinhua>
@@ -9,51 +7,41 @@
 - 提取字、词、成语为数组，根据数组索引分页生成详情，具体请看 `build/parse.html` 的拆分脚本
 
 ### 使用
-引入
+
 ```
-<script src="dist/zidian.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/netnr/zidian/dist/zidian.js"></script>
 ```
 
-npm 安装
-```
-npm install zidian
-```
-
-查看：<https://unpkg.com/zidian/>
-
+查看 <https://unpkg.com/zidian/>  
+拉取 `npm install zidian`
 
 汉字查询
 ```js
 zidian.equalWord(key)
-
 zidian.equalWord("爱").then(console.log)
 ```
 
 词语查询
 ```js
 zidian.equalCi(key)
-
 zidian.equalCi("美丽").then(console.log)
 ```
 
 成语查询
 ```js
 zidian.equalIdiom(key)
-
 zidian.equalIdiom("叶公好龙").then(console.log)
 ```
 
 词语模糊搜索
 ```js
 zidian.likeCi(key)
-
 zidian.likeCi("美").then(console.log)
 ```
 
 成语模糊搜索
 ```js
 zidian.likeIdiom(key)
-
 zidian.likeIdiom("三百").then(console.log)
 ```
 
